@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from utils import generate_data
+from utils import generate_data_list
 from bubble_sort import bubble_sort
+from quick_sort import quick_sort
 
 
 def binary_search(list, item):
@@ -25,9 +26,10 @@ def binary_search(list, item):
 
 
 def main():
-    input_data = generate_data(20)
+    input_data = generate_data_list(20)
     print(input_data)
-    output_data = bubble_sort(input_data)
+    #  output_data = bubble_sort(input_data)
+    output_data = quick_sort(input_data, 0, len(input_data) - 1)
     print(output_data)
 
     item = 5
