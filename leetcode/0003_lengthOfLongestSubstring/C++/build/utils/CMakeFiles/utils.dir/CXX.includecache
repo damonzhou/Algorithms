@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/air/work/Algorithms/leetcode/utils/C++/hash_table.cpp
+cstdio
+-
+cstdlib
+-
+hash_table.hpp
+/Users/air/work/Algorithms/leetcode/utils/C++/hash_table.hpp
+
+/Users/air/work/Algorithms/leetcode/utils/C++/hash_table.hpp
+

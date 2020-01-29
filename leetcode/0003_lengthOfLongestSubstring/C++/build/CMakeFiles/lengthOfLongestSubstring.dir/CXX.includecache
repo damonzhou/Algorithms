@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/air/work/Algorithms/leetcode/0003_lengthOfLongestSubstring/C++/length_of_longest_substring.cpp
+iostream
+-
+vector
+-
+string
+-
+unordered_map
+-
+

@@ -131,5 +131,6 @@ int main()
     s->releaseList(l1);
     s->releaseList(l2);
     s->releaseList(l3);
+    if (s) delete s;
     return 0;
 }
