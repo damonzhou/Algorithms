@@ -36,11 +36,28 @@ def partition(input_data, lo, hi):
     return j
 
 
+def partition_1(input_data, lo, hi):
+    pivot = lo
+    index = pivot + 1
+    i = index
+    while i <= hi:
+        if input_data[i] < input_data[pivot]:
+            repaint(input_data, [lo, hi], i, index)
+            swap(input_data, i, index)
+            repaint(input_data, [lo, hi], index, i)
+            index += 1
+        i += 1
+    repaint(input_data, [lo, hi], pivot, index - 1)
+    swap(input_data, pivot, index - 1)
+    repaint(input_data, [lo, hi], index - 1, pivot)
+    return index - 1
+
+
 def quick_sort(input_data, lo, hi):
     if hi <= lo:
         return
 
-    j = partition(input_data, lo, hi)
+    j = partition_1(input_data, lo, hi)
     quick_sort(input_data, lo, j - 1)
     quick_sort(input_data, j + 1, hi)
 
