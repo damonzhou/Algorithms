@@ -16,9 +16,7 @@ def generate_data_list(size):
 
 
 def swap(input, i, j):
-    temp = input[i]
-    input[i] = input[j]
-    input[j] = temp
+    input[i], input[j] = input[j], input[i]
 
 
 def less(x, y):
