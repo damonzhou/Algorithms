@@ -55,7 +55,7 @@ def partition_1(input_data, lo, hi):
 
 def quick_sort(input_data, lo, hi):
     if hi <= lo:
-        return
+        return input_data
 
     j = partition_1(input_data, lo, hi)
     quick_sort(input_data, lo, j - 1)
